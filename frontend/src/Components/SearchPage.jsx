@@ -35,7 +35,7 @@ export default function SearchPage() {
      const today= new Date();
      const dayIndex = today.getDay();
      const daysOfWeek = [
-      "Sunday", "Monday", "Tuesday" , "Wednesday" , "Thursday", "Friday", "Saturday" ];
+      "Sun", "Mon", "Tue" , "Wed" , "Thu", "Fri", "Sat" ];
     
       const formattedForecast = response.data.daily.slice(0,7).map((day,index) => ({
       dayName: daysOfWeek[(dayIndex + index) % 7],
@@ -79,19 +79,21 @@ export default function SearchPage() {
             <h3> Forecast for {query}</h3>
             <ul>
               {forecast.map((day, index) => (
-                <li key={index}>
-                  <strong> {day.dayName} :</strong> {day.description},{" "}
-                  {day.temperature}°C
+                <li key={index} >
+                  <strong> {day.dayName} :</strong>
                   <img
                     src={day.iconUrl}
                     alt={day.description}
-                    className="icon"
+                    className="weather-icon"
                   />
+                  {day.temperature}°C {""}
+                  <p>{day.description} </p>
                 </li>
               ))}
             </ul>
-          </div>
-          <ApiPhotos query={query} className="photos" />
+          </div> 
+      
+          <ApiPhotos query={query}  />
         </div>
       )}
     </div>

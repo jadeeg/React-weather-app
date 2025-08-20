@@ -39,3 +39,8 @@
 .nav-list li a:hover {
   background-color: var(--primary-bg-color); 
 }
+
+.home-icon {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}

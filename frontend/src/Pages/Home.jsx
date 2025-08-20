@@ -1,15 +1,16 @@
 import "../Css/Home.css";
 import image from "../Images/image-nature.jpg";
 
+
 export default function Home() {
   return (
     <div className="background-image">
       <div className="text-homepage">
-        Welcome! Check out the features that you can make your planning your
-        trip easier.
-        <p> Forecast </p>
-        <p> Budget </p>
-        <p> </p>
+        <p>Welcome! </p>
+        Check out the features: <strong> Forecast </strong>
+         and <strong> Budget </strong>
+         that you can make your planning your trip
+        easier.
       </div>
     </div>
   );

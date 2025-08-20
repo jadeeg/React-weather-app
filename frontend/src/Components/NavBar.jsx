@@ -11,7 +11,8 @@ export default function NacBar() {
           <li>
             <Link to="/">
               {" "}
-              <BsHouseDoorFill /> Home
+
+              <BsHouseDoorFill  className="home-icon"/> Home
             </Link>
           </li>
           <li>

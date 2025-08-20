@@ -49,15 +49,25 @@
 .photos{
   font-size: 50px;
 }
-.icon {
- font-size: 5px;
+.weather-icon {
+ font-size: 10px;
+  height: 50px;
+  margin-bottom: -12px;
 }
+
+
+
 .f-container {
-  border: 2px solid #fff;
+  border: 10px solid #fff;
   display: flex;
   flex-direction: column;
   align-items: center ;
-  font-size: 30px;
+  font-size: 27px;
+
+  background-color: var(--primary-bg-color);
+  width: 50vh;
+  height: 160vh;
+ border-radius: 15px;
   
 }
 
@@ -66,7 +76,10 @@
   display : flex;
   gap: 20px;
   align-items: flex-start;
-  border: 2px solid #fff;
+  border: 5px solid #fff;
+   margin: 50px 100px;
+   border-radius: 15px;
+
   
 
 }
@@ -75,6 +88,6 @@
  }
 
 
- img {
-  border-radius: 10px;
- }
+img {
+  border-radius: 100px;
+}
