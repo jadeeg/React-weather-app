@@ -1,0 +1,41 @@
+.navbar {
+  background-color:#122523;
+  padding: 1rem 2rem;
+  border-radius: 10px; 
+  margin: 20px auto;
+  width: 150vh;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  border-radius: var( --main-radius);
+  transition: background-color 0.3s;
+
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display:flex;
+
+  
+  
+}
+
+.nav-list li a:hover {
+  background-color: var(--primary-bg-color); 
+}

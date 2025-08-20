@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+color:var(--primary-text-color);
+}
+a:hover {
+    color:var(--hover-color);
+}
+
+.footer {
+    
+    margin: 20px auto;
+    padding: auto;
+    font-size: 15px;;
+}
